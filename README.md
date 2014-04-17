@@ -13,23 +13,37 @@ Output: The starting index of the first substick, the starting index of the seco
 
 In order to do this, I recursively found all the sticks starting from the largest substick: N/2 where N is the length of the stick.
 
-# # # # # # # # # # # # # #
--------------
-              -------------
+= = = = = = = = = = = = = =
+
+~ ~ ~ ~ ~ ~ ~
+
+              ~ ~ ~ ~ ~ ~ ~
+              
 I check this and then I check the next smallest stick. There are 6 possibilities
 
-# # # # # # # # # # # # # #
------------
-            -----------      (1)
-              ------------   (2)
-                -----------  (3)
-# # # # # # # # # # # # # #
-  -----------
-              -----------    (4)
-                -----------  (5)
-# # # # # # # # # # # # # #
-    -----------
-                -----------  (6)
+= = = = = = = = = = = = = =
+
+~ ~ ~ ~ ~ ~
+
+            ~ ~ ~ ~ ~ ~      (1)
+            
+              ~ ~ ~ ~ ~ ~    (2)
+              
+                ~ ~ ~ ~ ~ ~  (3)
+                
+= = = = = = = = = = = = = =
+
+  ~ ~ ~ ~ ~ ~
+  
+              ~ ~ ~ ~ ~ ~    (4)
+              
+                ~ ~ ~ ~ ~ ~  (5)
+                
+= = = = = = = = = = = = = =
+
+    ~ ~ ~ ~ ~ ~
+    
+                ~ ~ ~ ~ ~ ~  (6)
                 
 Then I just keep going recursively down until I find the sticks.
               
